@@ -1,5 +1,7 @@
+
  'use client'
- 
+import Link from "next/link";
+import {userRouter} from "next/navigation";
 import styles from "./page.module.css";
 /*
 export default function Home() {
@@ -66,9 +68,8 @@ export default function Home() {
       <button onClick={increment}>Increment</button>
       <button onClick={decrement}>Decrement</button>
      
-     <link href="/about">About</link>
-     <link href="/login">Login</link>
-      
+     <Link href="/about">Go to about</Link>
+     <Link href="/login">Go to login</Link>
     </main>
   );
 }
