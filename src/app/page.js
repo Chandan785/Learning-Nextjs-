@@ -32,6 +32,7 @@ const User = (props) => {
 
 // make button
 
+/*
 export default function Home() {
   const apple = (item)=>{
     alert(item)
@@ -44,5 +45,35 @@ export default function Home() {
     </main>
  )
 }
- 
+ */
+
 // use state
+
+
+ 
+export default function Home() {
+  const [count, setCount] = useState(0);
+  const increment = () => {
+    setCount(count + 1);
+  };
+  const decrement = () => {
+    setCount(count - 1);
+  };
+  return (
+    <main className={styles.main}>
+      <h1>Event , Function & state</h1>
+      <h2>Count : {count}</h2>
+      <button onClick={increment}>Increment</button>
+      <button onClick={decrement}>Decrement</button>
+     
+     <link href="/about">About</link>
+     <link href="/login">Login</link>
+      
+    </main>
+  );
+}
+import { useState } from "react";
+ 
+ 
+// file and folder structure
+
