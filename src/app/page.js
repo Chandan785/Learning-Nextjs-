@@ -1,7 +1,11 @@
 
  'use client'
 import Link from "next/link";
+<<<<<<< HEAD
 import {useRouter} from "next/navigation";
+=======
+import {userRouter} from "next/navigation";
+>>>>>>> 78d86d1123e7a4f6db3a056eb4573b4229fa9ac5
 import styles from "./page.module.css";
 /*
 export default function Home() {
@@ -71,6 +75,7 @@ export default function Home() {
      
      <Link href="/about">Go to about</Link>
      <Link href="/login">Go to login</Link>
+<<<<<<< HEAD
 
      <button onClick={() => router.push("/about")}>
       Go to about
@@ -86,6 +91,8 @@ export default function Home() {
         Go to about student login
       </button>
         
+=======
+>>>>>>> 78d86d1123e7a4f6db3a056eb4573b4229fa9ac5
     </main>
   );
 }
