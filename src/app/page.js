@@ -1,5 +1,7 @@
+
  'use client'
- 
+import Link from "next/link";
+import {useRouter} from "next/navigation";
 import styles from "./page.module.css";
 /*
 export default function Home() {
@@ -59,16 +61,31 @@ export default function Home() {
   const decrement = () => {
     setCount(count - 1);
   };
+  const router = useRouter();
   return (
-    <main className={styles.main}>
+     <main className={styles.main}>
       <h1>Event , Function & state</h1>
       <h2>Count : {count}</h2>
       <button onClick={increment}>Increment</button>
       <button onClick={decrement}>Decrement</button>
      
-     <link href="/about">About</link>
-     <link href="/login">Login</link>
-      
+     <Link href="/about">Go to about</Link>
+     <Link href="/login">Go to login</Link>
+
+     <button onClick={() => router.push("/about")}>
+      Go to about
+     </button>
+     <button onClick={() => router.push("/login")}>
+      Go to login
+     </button>
+   
+      <button onClick={() => router.push("/about/aboutcollage")}>
+        Go to about collage
+      </button>
+         <button onClick={() => router.push("/login/studentlogin")}>
+        Go to about student login
+      </button>
+        
     </main>
   );
 }
