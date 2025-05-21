@@ -22,6 +22,8 @@ const studentlogin = () => {
       <Link href = "/login/collagelogin">Go to Collage Login</Link>
       <br/>
       <button onClick={() => router.push('/login/collagelogin')}>Go to Collage Login</button>
+      <br />
+      <button onClick={() => router.push('/studentlist')}>Go to About Collage</button>
       </div>
      
     </div>
