@@ -28,8 +28,10 @@ const login =() =>{
                
                 <button onClick={()=>router.push('/')}>Go to home page</button>
                   <br/>  <br/>
-                <button onClick={()=> router.push('/about')}>Go to about page</button><br/>
+                <button onClick={()=> router.push('/about')}>Go to about page</button>
+               <br/>
                 <button onClick={()=> router.push('/about/aboutcollage')}>Go to about collage page</button>
+                 <br />
                  <button onClick={()=> router.push('/login/studentlogin')}>Go to about collage page</button>
               </main>      
     )
